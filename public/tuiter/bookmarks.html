@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tuiter Explore</title>
+        <title>Tuiter - Bookmarks</title>
         <link href="style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        
+        <div id="bookmarks-page" class="wd-container">
+            <div class="wd-container-child wd-posts-page-header">
+                <h3>Bookmarks</h3>
+                <p>@JaneDoe</p>
+            </div>
+
+            <!-- First Twitter post -->
+            <div class="wd-container-child wd-twitter-post"> <!-- To apply flexbox properties to div -->
+                <div class="wd-twitter-post-nested-column"> <!-- To vertically stack everything -->
+                    <div class="wd-twitter-post-main">
+                        <div>
+                            <img src="assets/johnaffleckpfp.jpg" alt="Picture of Ben Affleck" class="wd-post-user-pfp">
+                        </div>
+                        <div class="wd-twitter-post-body">
+                            <div class="wd-user-post-information">
+                                <h4>John Affleck</h4>
+                                <p>@im_batmans_cousin &bull; May 1</p>
+                            </div>
+                            <div class="wd-post-text-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="wd-post-article-ref">
+                                <img src="assets/batmanthumbnail.JPG" alt="Image of Batman smoldering" class="wd-post-thumbnail">
+                                <div class="wd-article-summary">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed...</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                    <div class="wd-article-link">
+                                        <i class="fa fa-link fa-rotate-90"></i>
+                                        <p>bloomberg.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wd-post-social-stats">
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-comment fa-lg"></i></a>
+                                    </div>
+                                    <p>5</p>
+                                </div>
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-share fa-lg"></i></a>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a id="heart-icon" href="#"><i class="fa fa-heart fa-lg"></i></a>
+                                    </div>
+                                    <p>1</p>
+                                </div>
+                                <div id="upload-icon" class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-upload fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Twitter post -->
+            <div class="wd-container-child wd-twitter-post"> <!-- To apply flexbox properties to div -->
+                <div class="wd-twitter-post-nested-column"> <!-- To vertically stack everything -->
+                    <div class="wd-twitter-post-main">
+                        <div>
+                            <img src="assets/tompfp.jpeg" alt="Picture of Tom from MySpace" class="wd-post-user-pfp">
+                        </div>
+                        <div class="wd-twitter-post-body">
+                            <div class="wd-user-post-information">
+                                <h4>Tom Anderson</h4>
+                                <p>@tom_from_myspace &bull; Aug 21</p>
+                            </div>
+                            <div class="wd-post-text-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="wd-post-article-ref">
+                                <img src="assets/myspacethumbnail.gif" alt="MySpace logo" class="wd-post-thumbnail">
+                                <div class="wd-article-summary">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="wd-article-link">
+                                        <i class="fa fa-link fa-rotate-90"></i>
+                                        <p>yahoo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wd-post-social-stats">
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-comment fa-lg"></i></a>
+                                    </div>
+                                    <p>5</p>
+                                </div>
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-share fa-lg"></i></a>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a id="heart-icon" href="#"><i class="fa fa-heart fa-lg"></i></a>
+                                    </div>
+                                    <p>1</p>
+                                </div>
+                                <div id="upload-icon" class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-upload fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Twitter post -->
+            <div class="wd-container-child wd-twitter-post"> <!-- To apply flexbox properties to div -->
+                <div class="wd-twitter-post-nested-column"> <!-- To vertically stack everything -->
+                    <div class="wd-twitter-post-main">
+                        <div>
+                            <img src="assets/frodobagginspfp.jpg" alt="Picture of bug-eyed Frodo" class="wd-post-user-pfp">
+                        </div>
+                        <div class="wd-twitter-post-body">
+                            <div class="wd-user-post-information">
+                                <h4>Frodo Baggins</h4>
+                                <p>@shire_mvp &bull; Sept 10</p>
+                            </div>
+                            <div class="wd-post-text-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                            </div>
+                            <div class="wd-post-article-ref">
+                                <img src="assets/hobbitthumbnail.jpg" alt="Who's this again? I forgot" class="wd-post-thumbnail">
+                                <div class="wd-article-summary">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    <div class="wd-article-link">
+                                        <i class="fa fa-link fa-rotate-90"></i>
+                                        <p>shiretimes.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wd-post-social-stats">
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-comment fa-lg"></i></a>
+                                    </div>
+                                    <p>5</p>
+                                </div>
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-share fa-lg"></i></a>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <div class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a id="heart-icon" href="#"><i class="fa fa-heart fa-lg"></i></a>
+                                    </div>
+                                    <p>1</p>
+                                </div>
+                                <div id="upload-icon" class="wd-post-social-stat">
+                                    <div class="wd-social-stat-icon-wrapper">
+                                        <a href="#"><i class="fa fa-upload fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>
