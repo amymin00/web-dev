@@ -29,7 +29,7 @@ body {
     border: solid rgb(31, 33, 34) .1px;
     color: #7d828b;
     width: 100%;
-    max-width: 850px;
+    max-width: 800px;
     background-color: #121213;
 }
 
@@ -94,14 +94,14 @@ input:focus { outline: none; }
 
 #suggested-topics-line {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .wd-nav-link {
     text-decoration: none;
-    margin: 0px 3% 10px;
+    margin: 0 3% 10px 5px;
 }
 
 a, a:visited {
