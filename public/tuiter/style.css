@@ -312,8 +312,7 @@ a:hover {
     /* background-color: white; */
 }
 
-#heart-icon:hover, #heart-icon:active, 
-    #heart-icon:focus, #heart-icon:visited {
+#heart-icon {
     color: red;
 }
 
