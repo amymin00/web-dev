@@ -67,8 +67,8 @@ body {
     width: 100%;
     border-style: hidden;
     box-sizing: border-box;
-    padding: 8px 50px 8px 20px;
-    font-size: 15px;
+    padding: 7px 50px 7px 20px;
+    font-size: 12px;
 }
 
 .fa-search {
