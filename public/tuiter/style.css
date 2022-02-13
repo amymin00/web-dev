@@ -216,8 +216,7 @@ a:hover {
 .wd-twitter-post-body {
     /* background-color: purple; */
     margin-left: 10px;
-    padding-bottom: 0; /* TODO: remove later */
-    /* padding: 0; */
+    max-width: 506px;
 }
 
 .wd-user-post-information {
@@ -298,17 +297,23 @@ a:hover {
     /* background-color: #565a61; */
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.wd-post-social-stats a {
+    text-decoration: none;
 }
 
 .wd-post-social-stat {
     display: flex;
     align-items: center;
     margin-right: 22%;
+    padding-top: 5px;
     /* background-color: white; */
 }
 
-#heart-icon:hover, #heart-icon:active, #heart-icon:focus, #heart-icon:visited {
+#heart-icon:hover, #heart-icon:active, 
+    #heart-icon:focus, #heart-icon:visited {
     color: red;
 }
 
@@ -318,9 +323,10 @@ a:hover {
 
 .wd-post-social-stat p {
     margin: 0;
-    margin-left: 40%;
+    padding: 10% 20%;
 }
 
 .wd-social-stat-icon-wrapper {
-    margin-bottom: 3.5px;
+    padding: 0 10%;
+    padding-bottom: 3.5px;
 }
