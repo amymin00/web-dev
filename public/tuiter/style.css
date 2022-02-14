@@ -297,7 +297,9 @@ a:hover {
     /* background-color: #565a61; */
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+    /* margin-top: 10px; */
 }
 
 .wd-post-social-stats a {
@@ -307,7 +309,7 @@ a:hover {
 .wd-post-social-stat {
     display: flex;
     align-items: center;
-    margin-right: 22%;
+    /* margin-right: 22%; */
     padding-top: 5px;
     /* background-color: white; */
 }
