@@ -8,65 +8,66 @@
     </head>
     <body>
         <div class="container">
-            <div class="row pt-2">
+            <div class="row py-2">
 
                 <!-- Left column with links to pages -->
 
-                <div class="col-md-2 bg-warning">
+                <div class="col-2 col-lg-1 col-xl-2">
                     <div class="list-group mb-2">
                         <i class="fa fa-twitter list-group-item"></i>
                         <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                             <i class="fa fa-home"></i>
-                            Home
+                            <span class="d-none d-xl-inline">Home</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action active">
                             <i class="fa fa-hashtag"></i>
-                            Explore
+                            <span class="d-none d-xl-inline">Explore</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action">
                             <i class="fa fa-bell"></i>
-                            Notifications
+                            <span class="d-none d-xl-inline">Notifications</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action">
                             <i class="fa fa-envelope"></i>
-                            Messages
+                            <span class="d-none d-xl-inline">Messages</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action">
                             <i class="fa fa-bookmark"></i>
-                            Bookmarks
+                            <span class="d-none d-xl-inline">Bookmarks</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action">
                             <i class="fa fa-list"></i>
-                            Lists
+                            <span class="d-none d-xl-inline">Lists</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action">
                             <i class="fa fa-user"></i>
-                            Profile
+                            <span class="d-none d-xl-inline">Profile</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action position-relative">
                             <i class="fa fa-circle med-icon"></i>
-                            <i class="fa fa-ellipsis-h position-absolute white-text-color move-ellipsis" style="font-size: .6em"></i>
-                            More
+                            <i class="fa fa-ellipsis-h position-absolute white-text move-ellipsis" style="font-size: .6em"></i>
+                            <span class="d-none d-xl-inline">More</span>
                         </a>
                     </div>
                     
-                    <button class="btn btn-primary w-100 rounded-pill">
+                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
                         Tuit
                     </button>
                 </div>
 
                 <!-- Middle column with main Explore body -->
 
-                <div class="col-md-6">
+                <div class="col-10 col-lg-7 col-xl-6">
                     <div class="row align-items-center mb-2">
                         <div class="col w-100">
                             <div class="input-group align-items-center rounded-pill border border-2 py-1 px-2">
-                                <i class="fa fa-search m-1"></i>
-                                <input type="search" class="form-control border-0 p-0 ms-3" placeholder="Search" aria-label="Search" />
+                                <i class="fa fa-search mx-2"></i>
+                                <input type="search" class="form-control shadow-none p-0 ms-1 border-0" placeholder="Search Tuiter" aria-label="Search" />
                             </div>
                         </div>
+                        <!-- TODO: Make space between gear and search bar responsive -->
                         <div class="col-1">
-                            <i class="fa fa-gear fa-2x blue-theme-text-color"></i>
+                            <i class="fa fa-gear fa-2x blue-text"></i>
                         </div>
                     </div>
                     <ul class="nav nav-tabs mb-2">
@@ -82,63 +83,223 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sports</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-md-inline">
                             <a class="nav-link" href="#">Entertainment</a>
                         </li>
                     </ul>
                     <div class="card position-relative">
                         <img src="assets/spacexstarship.jpg" alt="">
-                        <h3 class="position-absolute start-0 bottom-0 white-text-color ms-2"><strong>SpaceX's Starship</strong></h3>
+                        <h3 class="position-absolute start-0 bottom-0 white-text ms-2"><strong>SpaceX's Starship</strong></h3>
                     </div>
                     <div class="card">
-                        Card 1
+                        <div class="row py-2 px-3">
+                            <div class="col">
+                                <p class="light-gray-text m-0">Web Development</p>
+                                <div class="row align-items-center p-0 m-0">
+                                    <p class="w-auto p-0 m-0"><strong>ReactJS</strong></p>
+                                    <div class="row position-relative align-items-center w-auto mx-2 p-0">
+                                        <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                    </div>
+                                    <p class="light-gray-text w-auto m-0"> - 2h</p>
+                                </div>
+                                <p class="p-0 m-0"><strong>React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</strong></p>
+                                
+                            </div>
+                            <div class="col-2">
+                                <img src="assets/reactjslogo.png" class="w-100 rounded-img">
+                            </div>
+                        </div>
                     </div>
                     <div class="card">
-                        Card 2
+                        <div class="row py-2 px-3">
+                            <div class="col">
+                                <div class="row align-items-center p-0 m-0">
+                                    <p class="w-auto p-0 m-0"><strong>Javascript</strong></p>
+                                    <div class="row position-relative align-items-center w-auto mx-2 p-0">
+                                        <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                    </div>
+                                    <p class="light-gray-text w-auto m-0"> - 2h</p>
+                                </div>
+                                <p class="p-0 m-0"><strong>JavaScript is a programming language that can run on browsers as well as desktops</strong></p>
+                                <p class="light-gray-text m-0">123K Tuits</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="assets/javascriptlogo.jpg" class="w-100 rounded-img">
+                            </div>
+                        </div>
                     </div>
                     <div class="card">
-                        Card 3
+                        <div class="row py-2 px-3">
+                            <div class="col">
+                                <p class="light-gray-text m-0">Web Development</p>
+                                <div class="row align-items-center p-0 m-0">
+                                    <p class="w-auto p-0 m-0"><strong>jQuery</strong></p>
+                                    <div class="row position-relative align-items-center w-auto mx-2 p-0">
+                                        <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                    </div>
+                                    <p class="light-gray-text w-auto m-0"> - 2h</p>
+                                </div>
+                                <p class="light-gray-text m-0">123K Tuits</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="assets/jquerylogo.png" class="w-100 rounded-img">
+                            </div>
+                        </div>
                     </div>
                     <div class="card">
-                        Card 4
-                    </div>
-                    <div class="card">
-                        Card 5
+                        <div class="row py-2 px-3">
+                            <div class="col">
+                                <p class="light-gray-text m-0">Web Development</p>
+                                <div class="row align-items-center p-0 m-0">
+                                    <p class="w-auto p-0 m-0"><strong>NodeJS</strong></p>
+                                    <div class="row position-relative align-items-center w-auto mx-2 p-0">
+                                        <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                    </div>
+                                    <p class="light-gray-text w-auto m-0"> - 2h</p>
+                                </div>
+                                <p class="light-gray-text m-0">123K Tuits</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="assets/nodejslogo.png" class="w-100 rounded-img">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Right column with recommended list of users to follow -->
 
-                <div class="col-md-4 bg-warning">
+                <div class="col-4 d-none d-lg-block">
                     <ul class="list-group">
                         <li class="list-group-item"><strong>Who to follow</strong></li>
-                        <li class="list-group-item">
-                            <div class="row align-items-center">
-                                <div class="col-2 p-0">
-                                    <img src="assets/javalogo.jpg" class="image-fluid w-100">
+                        <li class="list-group-item py-1">
+                            <div class="row align-items-center p-0">
+                                <div class="col-2 p-0 ps-2">
+                                    <img src="assets/javalogo.jpg" class="w-80 rounded-circle">
                                 </div>
-                                <div class="col bg-info">
-                                    <div class="row p-0 align-items-center bg-dark">
-                                        <p class="w-auto p-0 bg-light"><strong>Java</strong></p>
-                                        <!-- <div class="position-relative w-auto bg-danger m-0">
-                                            <i class="fa fa-circle w-auto p-0 m-0 bg-primary"></i>
-                                            <i class="fa fa-check w-auto p-0 m-0 white-text-color position-absolute bg-primary"></i>
-                                        </div> -->
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <p class="w-auto p-0 m-0"><strong>Java</strong></p>
+                                        <div class="row position-relative align-items-center w-auto m-0">
+                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                            <!-- TODO: Make check smaller in size -->
+                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <p class="p-0 bg-warning">@Java</p>
+                                        <p class="p-0 m-0">@Java</p>
                                     </div>
                                 </div>
                                 <div class="col-3">
-                                    <button class="btn btn-primary w-100 rounded-pill">
+                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
                                         Follow
                                     </button>
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">Blade Runner</li>
-                        <li class="list-group-item">Lord of the Ring</li>
-                        <li class="list-group-item">Star Wars</li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center p-0">
+                                <div class="col-2 p-0 ps-2">
+                                    <img src="assets/relativityspacepfp.jpg" class="image-fluid w-80 rounded-circle">
+                                </div>
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <p class="w-auto p-0 m-0"><strong>Relativity Space</strong></p>
+                                        <div class="row position-relative align-items-center w-auto m-0">
+                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                            <!-- TODO: Make check smaller in size -->
+                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p class="p-0 m-0">@relativityspace</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center p-0">
+                                <div class="col-2 p-0 ps-2">
+                                    <img src="assets/virgingalactic.svg" class="image-fluid w-80 rounded-circle">
+                                </div>
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <p class="w-auto p-0 m-0"><strong>Virgin Galactic</strong></p>
+                                        <div class="row position-relative align-items-center w-auto m-0">
+                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                            <!-- TODO: Make check smaller in size -->
+                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p class="p-0 m-0">@virgingalactic</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center p-0">
+                                <div class="col-2 p-0 ps-2">
+                                    <img src="assets/nasalogo.jpg" class="image-fluid w-80 rounded-circle">
+                                </div>
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <p class="w-auto p-0 m-0"><strong>NASA</strong></p>
+                                        <div class="row position-relative align-items-center w-auto m-0">
+                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                            <!-- TODO: Make check smaller in size -->
+                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p class="p-0 m-0">@NASA</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center p-0">
+                                <div class="col-2 p-0 ps-2">
+                                    <img src="assets/teslalogo.png" class="image-fluid w-80 rounded-circle">
+                                </div>
+                                <div class="col">
+                                    <div class="row align-items-center">
+                                        <p class="w-auto p-0 m-0"><strong>Tesla</strong></p>
+                                        <div class="row position-relative align-items-center w-auto m-0">
+                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                            <!-- TODO: Make check smaller in size -->
+                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p class="p-0 m-0">@tesla</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     
                 </div>

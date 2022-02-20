@@ -1,15 +1,14 @@
-.blue-theme-text-color {
+.blue-text {
     color: #076FFA;
 }
 .blue-theme-bg-color {
     background-color: #076FFA;
 }
-.white-text-color {
+.white-text {
     color: white;
 }
-
-input {
-    outline: none;
+.light-gray-text {
+    color: #666970;
 }
 
 .med-icon {
@@ -21,24 +20,10 @@ input {
     left: 10.5%;
 }
 
-
-
-
-
-
-
-
-.wd-author-and-time-posted {
-    display: flex;
-    align-items: center;
+.w-80 {
+    width: 80%;
 }
-.wd-user-pfp-thumbnail {
-    width: 18px;
-    height: 18px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-.wd-for-you-user-header {
-    font-size: 15px;
+
+.rounded-img {
+    border-radius: 15%;
 }
