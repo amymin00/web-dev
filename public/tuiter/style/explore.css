@@ -1,0 +1,44 @@
+.blue-theme-text-color {
+    color: #076FFA;
+}
+.blue-theme-bg-color {
+    background-color: #076FFA;
+}
+.white-text-color {
+    color: white;
+}
+
+input {
+    outline: none;
+}
+
+.med-icon {
+    font-size: 1.2em;
+}
+
+.move-ellipsis {
+    top: 40%;
+    left: 10.5%;
+}
+
+
+
+
+
+
+
+
+.wd-author-and-time-posted {
+    display: flex;
+    align-items: center;
+}
+.wd-user-pfp-thumbnail {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.wd-for-you-user-header {
+    font-size: 15px;
+}
