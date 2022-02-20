@@ -2,115 +2,146 @@
 <html>
     <head>
         <title>Tuiter - Explore</title>
-        <link href="style.css" rel="stylesheet"/>
+        <link href="style/explore.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="wd-container">
-            <div id="explore-header" class="wd-container-child"> <!-- page header -->
-                <div id="search-bar-line" class="wd-search-container">
-                    <div class="wd-search-field 
-                                wd-dark-gray-background">
-                        <i class="fa fa-search fa-lg"></i>
-                        <input type="text" class="wd-search-input 
-                                                  wd-dark-gray-background 
-                                                  wd-light-gray-text" 
-                                           placeholder="Search Tuiter">
-                    </div>
-                    <div id="gear-wrapper">
-                        <a href="explore-settings.html">
-                            <i class="fa fa-gear fa-lg wd-active-blue-text"></i>
+        <div class="container">
+            <div class="row pt-2">
+
+                <!-- Left column with links to pages -->
+
+                <div class="col-md-2 bg-warning">
+                    <div class="list-group mb-2">
+                        <i class="fa fa-twitter list-group-item"></i>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <i class="fa fa-hashtag"></i>
+                            Explore
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-bell"></i>
+                            Notifications
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-envelope"></i>
+                            Messages
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-bookmark"></i>
+                            Bookmarks
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-list"></i>
+                            Lists
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fa fa-user"></i>
+                            Profile
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action position-relative">
+                            <i class="fa fa-circle med-icon"></i>
+                            <i class="fa fa-ellipsis-h position-absolute white-text-color move-ellipsis" style="font-size: .6em"></i>
+                            More
                         </a>
                     </div>
-                </div>
-                <div id="suggested-topics-line" class="wd-search-container">
-                    <div class="wd-nav-link wd-default-focus">
-                        <a href="#"><strong>For you</strong></a>
-                    </div>
-                    <a class="wd-nav-link" href="#"><strong>Trending</strong></a>
-                    <a class="wd-nav-link" href="#"><strong>COVID-19</strong></a>
-                    <a class="wd-nav-link" href="#"><strong>News</strong></a>
-                    <a class="wd-nav-link" href="#"><strong>Sports</strong></a>
-                    <a class="wd-nav-link" href="#"><strong>Entertainment</strong></a>
-                </div>
-            </div>
-
-            <div id="for-you-section" class="wd-container-child">
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-trending-topic"> <!-- Trending in category -->
-                    <div class="wd-suggestion-info">
-                        <p>Trending in Entertainment</p>
-                        <h4>Kanye West</h4>
-                        <p>23.2K Tuits</p>
-                    </div>
+                    
+                    <button class="btn btn-primary w-100 rounded-pill">
+                        Tuit
+                    </button>
                 </div>
 
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-trending-topic"> <!-- Trending in category -->
-                    <div class="wd-suggestion-info">
-                        <p>Trending in Sports</p>
-                        <h4>2022 Winter Olympics</h4>
-                        <p>30.7K Tuits</p>
-                    </div>
-                </div>
+                <!-- Middle column with main Explore body -->
 
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-article">
-                    <div class="wd-suggestion-info">
-                        <div class="wd-author-and-time-posted">
-                            <img src="assets/bostonglobelogo.JPG" alt="The Boston Globe Logo" class="wd-user-pfp-thumbnail"/>
-                            <h4 class="wd-for-you-user-header">The Boston Globe</h4>
-                            <i class="fa fa-check"></i>
-                            <p>&bull;&nbsp; Today</p>
+                <div class="col-md-6">
+                    <div class="row align-items-center mb-2">
+                        <div class="col w-100">
+                            <div class="input-group align-items-center rounded-pill border border-2 py-1 px-2">
+                                <i class="fa fa-search m-1"></i>
+                                <input type="search" class="form-control border-0 p-0 ms-3" placeholder="Search" aria-label="Search" />
+                            </div>
                         </div>
-                        <h4>Canadian police arrive to remove protesters at US border</h4>
-                    </div>
-                    <img src="assets/ottawaprotestthumbnail.JPG" alt="Ottawa Truck Protest Protest" class="wd-article-thumbnail"> <!-- article thumbnail -->
-                </div>
-
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-topic">
-                    <div class="wd-suggestion-info">
-                        <div class="wd-author-and-time-posted">
-                            <p>Sports &bull;&nbsp; LIVE</p>
+                        <div class="col-1">
+                            <i class="fa fa-gear fa-2x blue-theme-text-color"></i>
                         </div>
-                        <h4>2022 Beijing Winter Olympics</h4>
                     </div>
-                    <img src="assets/winterolympicsthumbnail.JPG" alt="Olympican Snowboarder" class="wd-article-thumbnail"> <!-- article thumbnail -->
+                    <ul class="nav nav-tabs mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                    <div class="card position-relative">
+                        <img src="assets/spacexstarship.jpg" alt="">
+                        <h3 class="position-absolute start-0 bottom-0 white-text-color ms-2"><strong>SpaceX's Starship</strong></h3>
+                    </div>
+                    <div class="card">
+                        Card 1
+                    </div>
+                    <div class="card">
+                        Card 2
+                    </div>
+                    <div class="card">
+                        Card 3
+                    </div>
+                    <div class="card">
+                        Card 4
+                    </div>
+                    <div class="card">
+                        Card 5
+                    </div>
                 </div>
 
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-article">
-                    <div class="wd-suggestion-info">
-                        <div class="wd-author-and-time-posted">
-                            <img src="assets/newyorktimeslogo.JPG" alt="The New York Times Logo" class="wd-user-pfp-thumbnail"/>
-                            <h4 class="wd-for-you-user-header">The New York Times</h4>
-                            <i class="fa fa-check"></i>
-                            <p>&bull;&nbsp; This past week</p>
-                        </div>
-                        <h4>The New York Times buys Wordle</h4>
-                    </div>
-                    <img src="assets/wordlethumbnail.JPG" alt="Wordle Interface" class="wd-article-thumbnail"> <!-- article thumbnail -->
-                </div>
+                <!-- Right column with recommended list of users to follow -->
 
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-trending-topic"> <!-- Trending in category -->
-                    <div class="wd-suggestion-info">
-                        <p>Trending in Entertainment</p>
-                        <h4>Billie Eilish</h4>
-                        <p>8.0K Tuits</p>
-                    </div>
+                <div class="col-md-4 bg-warning">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Who to follow</strong></li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-2 p-0">
+                                    <img src="assets/javalogo.jpg" class="image-fluid w-100">
+                                </div>
+                                <div class="col bg-info">
+                                    <div class="row p-0 align-items-center bg-dark">
+                                        <p class="w-auto p-0 bg-light"><strong>Java</strong></p>
+                                        <!-- <div class="position-relative w-auto bg-danger m-0">
+                                            <i class="fa fa-circle w-auto p-0 m-0 bg-primary"></i>
+                                            <i class="fa fa-check w-auto p-0 m-0 white-text-color position-absolute bg-primary"></i>
+                                        </div> -->
+                                    </div>
+                                    <div class="row">
+                                        <p class="p-0 bg-warning">@Java</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary w-100 rounded-pill">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">Blade Runner</li>
+                        <li class="list-group-item">Lord of the Ring</li>
+                        <li class="list-group-item">Star Wars</li>
+                    </ul>
+                    
                 </div>
-
-                <div class="wd-for-you-suggestion 
-                            wd-suggested-trending-topic"> <!-- Trending in category -->
-                    <div class="wd-suggestion-info">
-                        <p>Trending in News</p> 
-                        <h4>Ottawa</h4>
-                        <p>3.1K Tuits</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </body>
