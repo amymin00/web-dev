@@ -43,10 +43,13 @@
                             <i class="fa fa-user"></i>
                             <span class="d-none d-xl-inline">Profile</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action position-relative">
-                            <i class="fa fa-circle med-icon"></i>
-                            <i class="fa fa-ellipsis-h position-absolute white-text move-ellipsis" style="font-size: .6em"></i>
-                            <span class="d-none d-xl-inline">More</span>
+                        <a href="#" class="list-group-item list-group-item-action d-flex">
+                            <div class="position-relative align-items-center start-0 w-auto">
+                                <i class="fa fa-circle w-auto"></i>
+                                <i class="fa fa-ellipsis-h w-auto p-0 text-white position-absolute"
+                                   style="font-size: .55em;  margin-left: -1.15em; margin-top: 1em;"></i>
+                            </div>
+                            <span class="d-none d-xl-inline ms-1">More</span>
                         </a>
                     </div>
                     
@@ -58,17 +61,12 @@
                 <!-- Middle column with main Explore body -->
 
                 <div class="col-10 col-lg-7 col-xl-6">
-                    <div class="row align-items-center mb-2">
-                        <div class="col w-100">
-                            <div class="input-group align-items-center rounded-pill border border-2 py-1 px-2">
-                                <i class="fa fa-search mx-2"></i>
-                                <input type="search" class="form-control shadow-none p-0 ms-1 border-0" placeholder="Search Tuiter" aria-label="Search" />
-                            </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <div class="input-group align-items-center rounded-pill border border-2 py-1 px-2">
+                            <i class="fa fa-search mx-2"></i>
+                            <input type="search" class="form-control shadow-none p-0 ms-1 border-0" placeholder="Search Tuiter" aria-label="Search" />
                         </div>
-                        <!-- TODO: Make space between gear and search bar responsive -->
-                        <div class="col-1">
-                            <i class="fa fa-gear fa-2x blue-text"></i>
-                        </div>
+                        <i class="fa fa-gear fa-2x blue-text ms-3"></i>
                     </div>
                     <ul class="nav nav-tabs mb-2">
                         <li class="nav-item">
@@ -89,7 +87,7 @@
                     </ul>
                     <div class="card position-relative">
                         <img src="assets/spacexstarship.jpg" alt="">
-                        <h3 class="position-absolute start-0 bottom-0 white-text ms-2"><strong>SpaceX's Starship</strong></h3>
+                        <h3 class="position-absolute start-0 bottom-0 text-white ms-2"><strong>SpaceX's Starship</strong></h3>
                     </div>
                     <div class="card">
                         <div class="row py-2 px-3">
@@ -99,7 +97,8 @@
                                     <p class="w-auto p-0 m-0"><strong>ReactJS</strong></p>
                                     <div class="row position-relative align-items-center w-auto mx-2 p-0">
                                         <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                        <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                           style="font-size: .55em; margin-left: .25em;"></i>
                                     </div>
                                     <p class="light-gray-text w-auto m-0"> - 2h</p>
                                 </div>
@@ -118,7 +117,8 @@
                                     <p class="w-auto p-0 m-0"><strong>Javascript</strong></p>
                                     <div class="row position-relative align-items-center w-auto mx-2 p-0">
                                         <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                        <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                           style="font-size: .55em; margin-left: .25em;"></i>
                                     </div>
                                     <p class="light-gray-text w-auto m-0"> - 2h</p>
                                 </div>
@@ -138,7 +138,8 @@
                                     <p class="w-auto p-0 m-0"><strong>jQuery</strong></p>
                                     <div class="row position-relative align-items-center w-auto mx-2 p-0">
                                         <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                        <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                           style="font-size: .55em; margin-left: .25em;"></i>
                                     </div>
                                     <p class="light-gray-text w-auto m-0"> - 2h</p>
                                 </div>
@@ -157,7 +158,8 @@
                                     <p class="w-auto p-0 m-0"><strong>NodeJS</strong></p>
                                     <div class="row position-relative align-items-center w-auto mx-2 p-0">
                                         <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                        <i class="fa fa-check w-auto p-0 white-text position-absolute"></i>
+                                        <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                           style="font-size: .55em; margin-left: .25em;"></i>
                                     </div>
                                     <p class="light-gray-text w-auto m-0"> - 2h</p>
                                 </div>
@@ -180,24 +182,31 @@
                                 <div class="col-2 p-0 ps-2">
                                     <img src="assets/javalogo.jpg" class="w-80 rounded-circle">
                                 </div>
-                                <div class="col">
-                                    <div class="row align-items-center">
-                                        <p class="w-auto p-0 m-0"><strong>Java</strong></p>
-                                        <div class="row position-relative align-items-center w-auto m-0">
-                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                            <!-- TODO: Make check smaller in size -->
-                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <div class="row align-items-center">
+                                            <p class="w-auto p-0 m-0"><strong>Java</strong></p>
+                                            <div class="row position-relative align-items-center w-auto mx-1 p-0">
+                                                <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                                <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                                   style="font-size: .55em; margin-left: .25em;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="p-0 m-0">@Java</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <p class="p-0 m-0">@Java</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-primary rounded-pill shadow-none w-auto">
+                                            Follow
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <!-- <div class="col-3">
                                     <button class="btn btn-primary w-100 rounded-pill shadow-none">
                                         Follow
                                     </button>
-                                </div>
+                                </div> -->
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -205,23 +214,25 @@
                                 <div class="col-2 p-0 ps-2">
                                     <img src="assets/relativityspacepfp.jpg" class="image-fluid w-80 rounded-circle">
                                 </div>
-                                <div class="col">
-                                    <div class="row align-items-center">
-                                        <p class="w-auto p-0 m-0"><strong>Relativity Space</strong></p>
-                                        <div class="row position-relative align-items-center w-auto m-0">
-                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                            <!-- TODO: Make check smaller in size -->
-                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <div class="row align-items-center">
+                                            <p class="w-auto p-0 m-0"><strong>Relativity Space</strong></p>
+                                            <div class="row position-relative align-items-center w-auto mx-1 p-0">
+                                                <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                                <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                                   style="font-size: .55em; margin-left: .25em;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="p-0 m-0">@relativityspace</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <p class="p-0 m-0">@relativityspace</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-primary rounded-pill shadow-none w-auto">
+                                            Follow
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="col-3">
-                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
-                                        Follow
-                                    </button>
                                 </div>
                             </div>
                         </li>
@@ -230,23 +241,25 @@
                                 <div class="col-2 p-0 ps-2">
                                     <img src="assets/virgingalactic.svg" class="image-fluid w-80 rounded-circle">
                                 </div>
-                                <div class="col">
-                                    <div class="row align-items-center">
-                                        <p class="w-auto p-0 m-0"><strong>Virgin Galactic</strong></p>
-                                        <div class="row position-relative align-items-center w-auto m-0">
-                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                            <!-- TODO: Make check smaller in size -->
-                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <div class="row align-items-center">
+                                            <p class="w-auto p-0 m-0"><strong>Virgin Galactic</strong></p>
+                                            <div class="row position-relative align-items-center w-auto mx-1 p-0">
+                                                <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                                <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                                   style="font-size: .55em; margin-left: .25em;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="p-0 m-0">@virgingalactic</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <p class="p-0 m-0">@virgingalactic</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-primary rounded-pill shadow-none w-auto">
+                                            Follow
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="col-3">
-                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
-                                        Follow
-                                    </button>
                                 </div>
                             </div>
                         </li>
@@ -255,23 +268,25 @@
                                 <div class="col-2 p-0 ps-2">
                                     <img src="assets/nasalogo.jpg" class="image-fluid w-80 rounded-circle">
                                 </div>
-                                <div class="col">
-                                    <div class="row align-items-center">
-                                        <p class="w-auto p-0 m-0"><strong>NASA</strong></p>
-                                        <div class="row position-relative align-items-center w-auto m-0">
-                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                            <!-- TODO: Make check smaller in size -->
-                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <div class="row align-items-center">
+                                            <p class="w-auto p-0 m-0"><strong>NASA</strong></p>
+                                            <div class="row position-relative align-items-center w-auto mx-1 p-0">
+                                                <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                                <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                                   style="font-size: .55em; margin-left: .25em;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="p-0 m-0">@NASA</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <p class="p-0 m-0">@NASA</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-primary rounded-pill shadow-none w-auto">
+                                            Follow
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="col-3">
-                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
-                                        Follow
-                                    </button>
                                 </div>
                             </div>
                         </li>
@@ -280,23 +295,25 @@
                                 <div class="col-2 p-0 ps-2">
                                     <img src="assets/teslalogo.png" class="image-fluid w-80 rounded-circle">
                                 </div>
-                                <div class="col">
-                                    <div class="row align-items-center">
-                                        <p class="w-auto p-0 m-0"><strong>Tesla</strong></p>
-                                        <div class="row position-relative align-items-center w-auto m-0">
-                                            <i class="fa fa-circle w-auto position-absolute p-0"></i>
-                                            <!-- TODO: Make check smaller in size -->
-                                            <i class="fa fa-check w-auto p-0 m-0 white-text position-absolute"></i>
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <div class="row align-items-center">
+                                            <p class="w-auto p-0 m-0"><strong>Tesla</strong></p>
+                                            <div class="row position-relative align-items-center w-auto mx-1 p-0">
+                                                <i class="fa fa-circle w-auto position-absolute p-0"></i>
+                                                <i class="fa fa-check w-auto p-0 text-white position-absolute"
+                                                   style="font-size: .55em; margin-left: .25em;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="p-0 m-0">@Tesla</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <p class="p-0 m-0">@tesla</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-primary rounded-pill shadow-none w-auto">
+                                            Follow
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="col-3">
-                                    <button class="btn btn-primary w-100 rounded-pill shadow-none">
-                                        Follow
-                                    </button>
                                 </div>
                             </div>
                         </li>

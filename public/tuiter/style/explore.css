@@ -4,20 +4,8 @@
 .blue-theme-bg-color {
     background-color: #076FFA;
 }
-.white-text {
-    color: white;
-}
 .light-gray-text {
     color: #666970;
-}
-
-.med-icon {
-    font-size: 1.2em;
-}
-
-.move-ellipsis {
-    top: 40%;
-    left: 10.5%;
 }
 
 .w-80 {
