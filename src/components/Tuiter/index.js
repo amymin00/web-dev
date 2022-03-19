@@ -1,5 +1,5 @@
 import React from 'react';
-import ExploreScreen from './ExploreScreen';
+import ExploreScreen from './ExploreScreen/index.js';
 import './style.css';
 
 const Tuiter = () => {
