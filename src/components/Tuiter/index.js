@@ -10,10 +10,10 @@ const Tuiter = () => {
             <Link to="/hello">
                 Hello
             </Link> |
-            <Link to="/labs">
+            <Link to="/">
                 Labs
             </Link>
-            
+
             <ExploreScreen />
         </>
     )
