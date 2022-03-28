@@ -6,7 +6,7 @@ const NavigationSidebar = ({
     return (
         <>
             <div className="list-group">
-                <i className="fa fa-twitter list-group-item"></i>
+                <i className="fab fa-twitter list-group-item"></i>
                 <a href="#" className={`list-group-item list-group-item-action
                                         ${active === 'home' ? 'active' : ''}`} aria-current="true">
                     <i className="fa fa-home"></i>
@@ -53,7 +53,7 @@ const NavigationSidebar = ({
                 </a>
             </div>
             <div className="d-grid mt-2">
-                <a href="tweet.html"
+                <a href="tuit.html"
                    className="btn btn-primary btn-block rounded-pill">
                     Tuit</a>
             </div>

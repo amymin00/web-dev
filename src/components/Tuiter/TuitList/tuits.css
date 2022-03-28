@@ -1,0 +1,11 @@
+.wd-avatar-image {
+    width: 48px;
+}
+
+.wd-border-radius-20px {
+    border-radius: 20px;
+}
+
+.wd-delete-tuit:hover, .wd-delete-tuit:active {
+    cursor: pointer;
+}
