@@ -12,19 +12,19 @@ function App() {
             <div className="container">
                 <Routes>
                     <Route path="/">
-                    <Route path="labs"
-                            element={<Labs/>}/>
-                    <Route path="hello"
-                            element={<HelloWorld/>}/>
-                    <Route path="tuiter"
-                            element={<Tuiter/>}>
-                        <Route index
-                                element={<HomeScreen/>}/>
-                        <Route path="explore"
-                                element={<ExploreScreen/>}/>
-                        {/* <Route path="notifications" 
-                                element={<NotificationScreen/>}/> */}
-                    </Route>
+                        <Route index element={<Labs />} />
+	                    <Route path="labs" exact={true} element={<Labs />} />
+                        <Route path="hello"
+                                element={<HelloWorld/>}/>
+                        <Route path="tuiter"
+                                element={<Tuiter/>}>
+                            <Route index
+                                    element={<HomeScreen/>}/>
+                            <Route path="explore"
+                                    element={<ExploreScreen/>}/>
+                            {/* <Route path="notifications" 
+                                    element={<NotificationScreen/>}/> */}
+                        </Route>
                     </Route>
                 </Routes>
             </div>
