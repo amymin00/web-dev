@@ -54,8 +54,9 @@ const NavigationSidebar = ({
             </div>
             <div className="d-grid mt-2">
                 <a href="tuit.html"
-                   className="btn btn-primary btn-block rounded-pill">
-                    Tuit</a>
+                   className="btn btn-primary btn-block rounded-pill shadow-none">
+                    Tuit
+                </a>
             </div>
         </>
     );

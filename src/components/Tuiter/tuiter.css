@@ -5,3 +5,7 @@
 .rounded-img {
     border-radius: 15%;
 }
+
+.wd-input-box:focus {
+    background-color: rgb(20, 20, 20) !important;
+}

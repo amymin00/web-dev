@@ -17,7 +17,7 @@ const TuitStats = ({tuit}) => {
                 <i className="fas fa-retuit me-2"></i>
                 {tuit.stats.retuits}
             </div>
-            <div className="col" onClick={likeTuit}>
+            <div className="col wd-cursor-pointer" onClick={likeTuit}>
                 {
                     tuit.liked &&
                     <i className="fas fa-heart me-1"
