@@ -1,3 +1,4 @@
+import React from "react";
 import {Outlet} from "react-router-dom";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";

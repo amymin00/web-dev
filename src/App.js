@@ -1,3 +1,4 @@
+import React from 'react';
 import './vendors/bootstrap/css/bootstrap.min.css';
 import HelloWorld from './components/HelloWorld';
 import Labs from './components/Labs';

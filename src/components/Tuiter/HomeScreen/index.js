@@ -1,3 +1,4 @@
+import React from "react";
 import WhatsHappening from "./WhatsHappening";
 import TuitList from "../TuitList";
 
