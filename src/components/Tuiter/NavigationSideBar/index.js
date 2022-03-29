@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavigationSidebar = ({
         active = 'home'
     }) => {
+    const [active_, setActive] = useState(active);
+
     return (
         <>
             <div className="list-group">
                 <i className="fab fa-twitter list-group-item"></i>
-                <a href="/tuiter" className={`list-group-item list-group-item-action
-                                        ${active === 'home' ? 'active' : ''}`} aria-current="true">
+                <Link to="/tuiter" 
+                      className={`list-group-item list-group-item-action ${active_ === 'home' ? 'active' : ''}`}
+                      onClick={() => setActive('home')}>
                     <i className="fa fa-home"></i>
                     <span className="d-none d-xl-inline">Home</span>
-                </a>
-                <a href="/tuiter/explore" className={`list-group-item list-group-item-action 
-                                        ${active === 'explore' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/explore" 
+                      className={`list-group-item list-group-item-action ${active_ === 'explore' ? 'active' : ''}`}
+                      onClick={() => setActive('explore')}>
                     <i className="fa fa-hashtag"></i>
                     <span className="d-none d-xl-inline">Explore</span>
-                </a>
+                </Link>
                 <a href="#" className={`list-group-item list-group-item-action
                                         ${active === 'notifications' ? 'active' : ''}`}>
                     <i className="fa fa-bell"></i>
