@@ -1,18 +1,18 @@
 import React from "react";
 
 const NavigationSidebar = ({
-        active = 'explore'
+        active = 'home'
     }) => {
     return (
         <>
             <div className="list-group">
                 <i className="fab fa-twitter list-group-item"></i>
-                <a href="#" className={`list-group-item list-group-item-action
+                <a href="/tuiter" className={`list-group-item list-group-item-action
                                         ${active === 'home' ? 'active' : ''}`} aria-current="true">
                     <i className="fa fa-home"></i>
                     <span className="d-none d-xl-inline">Home</span>
                 </a>
-                <a href="#" className={`list-group-item list-group-item-action 
+                <a href="/tuiter/explore" className={`list-group-item list-group-item-action 
                                         ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa fa-hashtag"></i>
                     <span className="d-none d-xl-inline">Explore</span>
