@@ -22,46 +22,52 @@ const NavigationSidebar = ({
                     <i className="fa fa-hashtag"></i>
                     <span className="d-none d-xl-inline">Explore</span>
                 </Link>
-                <a href="#" className={`list-group-item list-group-item-action
-                                        ${active === 'notifications' ? 'active' : ''}`}>
+                <Link to="" 
+                      className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}
+                      onClick={() => setActive('notifications')}>
                     <i className="fa fa-bell"></i>
                     <span className="d-none d-xl-inline">Notifications</span>
-                </a>
-                <a href="#" className={`list-group-item list-group-item-action
-                                        ${active === 'messages' ? 'active' : ''}`}>
+                </Link>
+                <Link to="" 
+                      className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}
+                      onClick={() => setActive('messages')}>
                     <i className="fa fa-envelope"></i>
                     <span className="d-none d-xl-inline">Messages</span>
-                </a>
-                <a href="#" className={`list-group-item list-group-item-action
-                                        ${active === 'bookmarks' ? 'active' : ''}`}>
+                </Link>
+                <Link to="" 
+                      className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}
+                      onClick={() => setActive('bookmarks')}>
                     <i className="fa fa-bookmark"></i>
                     <span className="d-none d-xl-inline">Bookmarks</span>
-                </a>
-                <a href="#" className={`list-group-item list-group-item-action
-                                        ${active === 'lists' ? 'active' : ''}`}>
+                </Link>
+                <Link to="" 
+                      className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}
+                      onClick={() => setActive('lists')}>
                     <i className="fa fa-list"></i>
                     <span className="d-none d-xl-inline">Lists</span>
-                </a>
-                <a href="#" className={`list-group-item list-group-item-action
-                                        ${active === 'profile' ? 'active' : ''}`}>
+                </Link>
+                <Link to="" 
+                      className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}
+                      onClick={() => setActive('profile')}>
                     <i className="fa fa-user"></i>
                     <span className="d-none d-xl-inline">Profile</span>
-                </a>
-                <a href="#" className={`list-group-item list-group-item-action d-flex
-                                        ${active === 'more' ? 'active' : ''}`}>
+                </Link>
+                <Link to="" 
+                      className={`list-group-item list-group-item-action d-flex ${active === 'more' ? 'active' : ''}`}
+                      onClick={() => setActive('more')}>
                     <div className="position-relative align-items-center start-0 w-auto">
                         <i className="fa fa-circle w-auto"></i>
                         <i className="fa fa-ellipsis-h w-auto p-0 text-black position-absolute"
                         style={{fontSize: '.55em',  marginLeft: '-1.15em', marginTop: '1em'}}></i>
                     </div>
                     <span className="d-none d-xl-inline ms-1">More</span>
-                </a>
+                </Link>
             </div>
             <div className="d-grid mt-2">
-                <a href="tuit.html"
+                <Link to="tuit.html"
                    className="btn btn-primary btn-block rounded-pill shadow-none">
                     Tuit
-                </a>
+                </Link>
             </div>
         </>
     );
