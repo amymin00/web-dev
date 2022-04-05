@@ -1,15 +1,16 @@
 import React from "react";
 import './tuits.css';
 import TuitStats from "./TuitStats";
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "../../actions/tuits-actions";
 
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-      };    
+    // const deleteTuit = (tuit) => {
+    //     dispatch({type: 'delete-tuit', tuit})
+    // };    
 
-    return(
+    return (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-1 align-text-top">
@@ -17,7 +18,7 @@ const TuitListItem = ({tuit}) => {
                             src={tuit['logo-image']}/>
                 </div>
                 <div className="col ps-4 w-100">
-                    <i onClick={() => deleteTuit(tuit)}
+                    <i onClick={() => deleteTuit(dispatch, tuit)}
                         className="wd-cursor-pointer fa fa-remove fa-pull-right">
                     </i>
                     <span className="fw-bold">{tuit.userName}</span>

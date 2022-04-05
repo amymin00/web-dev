@@ -1,11 +1,9 @@
 import React from "react";
 import {useDispatch} from "react-redux";
+import { updateTuit } from "../../actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
-    const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
-    };    
 
     return (
         <div className="row mt-2">
@@ -17,7 +15,11 @@ const TuitStats = ({tuit}) => {
                 <i className="fas fa-retuit me-2"></i>
                 {tuit.stats.retuits}
             </div>
-            <div className="col wd-cursor-pointer" onClick={likeTuit}>
+            <div className="col wd-cursor-pointer" 
+                 onClick={() => updateTuit(dispatch, {
+                     ...tuit,
+                     likes: tuit.likes + 1
+            })}>
                 {
                     tuit.liked &&
                     <i className="fas fa-heart me-1"

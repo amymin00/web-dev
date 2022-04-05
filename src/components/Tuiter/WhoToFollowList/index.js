@@ -5,7 +5,7 @@ const WhoToFollowList = () => {
     const who = useSelector(state => state.who);
     return (
         <div>
-            {who.map(w => <WhoToFollowListItem who={w} />)}
+            {who.map(w => <WhoToFollowListItem key={who.handle} who={w} />)}
         </div>
     );
 }
