@@ -6,9 +6,6 @@ import { deleteTuit } from "../../actions/tuits-actions";
 
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
-    // const deleteTuit = (tuit) => {
-    //     dispatch({type: 'delete-tuit', tuit})
-    // };    
 
     return (
         <li className="list-group-item">
