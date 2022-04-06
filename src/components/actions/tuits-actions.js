@@ -2,7 +2,8 @@ import * as service from '../services/tuits-service';
 
 export const CREATE_TUIT = 'CREATE_TUIT';
 export const FIND_ALL_TUITS = 'FIND_ALL_TUITS';
-export const UPDATE_TUIT = 'UPDATE_TUIT';
+export const LIKE_TUIT = 'LIKE_TUIT';
+export const DISLIKE_TUIT = 'DISLIKE_TUIT'
 export const DELETE_TUIT = 'DELETE_TUIT';
 
 export const createTuit = async (dispatch, tuit) => {
@@ -21,13 +22,21 @@ export const findAllTuits = async (dispatch) => {
     });
 }
 
-export const updateTuit = async (dispatch, tuit) => {
+export const likeTuit = async (dispatch, tuit) => {
     const status = await service.updateTuit(tuit);
     dispatch({
-      type: UPDATE_TUIT,
+      type: LIKE_TUIT,
       tuit
     });
 }   
+
+export const dislikeTuit = async (dispatch, tuit) => {
+    const status = await service.updateTuit(tuit);
+    dispatch({
+      type: DISLIKE_TUIT,
+      tuit
+    });
+} 
 
 export const deleteTuit = async (dispatch, tuit) => {
     const response = await service.deleteTuit(tuit);

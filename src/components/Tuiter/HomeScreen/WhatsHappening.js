@@ -12,6 +12,7 @@ const WhatsHappening = () => {
             "username": "ReactJS"
         },
         "liked": false,
+        "disliked": false,
         "verified": false,
         handle: "ReactJS",
         "logo-image": "/tuiter/assets/catpfp.jpg",
@@ -20,6 +21,7 @@ const WhatsHappening = () => {
             comments: 123,
             retuits: 111,
             likes: 222,
+            dislikes: 501
         }
     });
 
