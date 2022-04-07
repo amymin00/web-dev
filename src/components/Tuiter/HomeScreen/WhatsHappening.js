@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { nanoid } from "nanoid";
 import { useDispatch } from "react-redux";
 import { createTuit } from "../../actions/tuits-actions";
 
@@ -8,7 +7,6 @@ const WhatsHappening = () => {
     
     const [newTuit, setNewTuit] = useState({
         tuit: 'New tuit',
-        _id: nanoid() + '',
         postedBy: {
             "username": "ReactJS"
         },
@@ -34,7 +32,9 @@ const WhatsHappening = () => {
             </div>
             <div className="col ps-4 w-100">
                 <textarea 
-                        onChange={(e) => setNewTuit({...newTuit, tuit: e.target.value})}
+                        onChange={(e) => setNewTuit({...newTuit, 
+                                                     _id: `${(new Date()).getTime()}`,
+                                                     tuit: e.target.value})}
                         className="form-control bg-black p-2 shadow-none w-100 text-white wd-input-box"
                         placeholder="What's happening?">
                 </textarea>
