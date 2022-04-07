@@ -1,6 +1,6 @@
 import axios from 'axios';
 const API_BASE = process.env.REACT_APP_API_BASE_A9;
-// const API_BASE = 'https://cs4550-web-dev-server-a9.herokuapp.com/api/';
+// const API_BASE = 'https://cs4550-web-dev-server-a9.herokuapp.com/api';
 // const API_BASE = 'http://localhost:4000/api';
 const TUITS_API = `${API_BASE}/tuits`;
 

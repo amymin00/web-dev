@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { nanoid } from "nanoid";
 import { useDispatch } from "react-redux";
 import { createTuit } from "../../actions/tuits-actions";
 
@@ -7,7 +8,7 @@ const WhatsHappening = () => {
     
     const [newTuit, setNewTuit] = useState({
         tuit: 'New tuit',
-        _id: (new Date()).getTime() + '',
+        _id: nanoid() + '',
         postedBy: {
             "username": "ReactJS"
         },
