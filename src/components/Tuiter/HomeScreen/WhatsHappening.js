@@ -4,8 +4,11 @@ import { createTuit } from "../../actions/tuits-actions";
 
 const WhatsHappening = () => {
     const dispatch = useDispatch();
+
+    // const newID = (new Date()).getTime();
     
     const [newTuit, setNewTuit] = useState({
+        // _id: (new Date()).getTime() + '',
         tuit: 'New tuit',
         postedBy: {
             "username": "ReactJS"
@@ -24,6 +27,8 @@ const WhatsHappening = () => {
         }
     });
 
+    // console.log(`setState: ${newTuit._id}`);
+
     return (
         <div className="row pt-2 mb-3">
             <div className="col-1 ms-3 align-top">
@@ -32,9 +37,8 @@ const WhatsHappening = () => {
             </div>
             <div className="col ps-4 w-100">
                 <textarea 
-                        onChange={(e) => setNewTuit({...newTuit, 
-                                                     _id: `${(new Date()).getTime()}`,
-                                                     tuit: e.target.value})}
+                        onChange={e => setNewTuit({...newTuit,
+                                                  tuit: e.target.value})}
                         className="form-control bg-black p-2 shadow-none w-100 text-white wd-input-box"
                         placeholder="What's happening?">
                 </textarea>
